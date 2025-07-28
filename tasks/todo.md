@@ -64,3 +64,14 @@
    - Set up email automation
    - Integrate payment gateway
    - Configure SEO settings
+
+# GitHub Repository Connection
+
+## Todo
+
+- [x] Configure git user identity (name and email)
+- [x] Create initial commit with staged files
+- [ ] Get GitHub repository URL from user
+- [ ] Add GitHub repository as remote origin
+- [ ] Push main branch to GitHub with upstream tracking
+- [ ] Verify connection and files on GitHub
