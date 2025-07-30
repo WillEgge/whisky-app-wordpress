@@ -37,6 +37,7 @@
 - `CLAUDE.md` - Technical implementation guide
 - `tasks/todo.md` - Task tracking with completed GitHub setup
 - `devHistory.md` - This development history file
+- `README.md` - Comprehensive project documentation and setup guide
 
 ### Phase 2: WordPress Development Environment (Current)
 
