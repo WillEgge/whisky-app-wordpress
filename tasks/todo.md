@@ -77,7 +77,7 @@
 - [x] Verify connection and files on GitHub
 - [x] Create comprehensive README.md file
 
-## Current Phase: WordPress Development Setup
+## Current Phase: WordPress Development Setup (feature/wordpress-setup branch)
 
 ### Environment Setup
 - [ ] Install WordPress locally (Local by Flywheel recommended)
