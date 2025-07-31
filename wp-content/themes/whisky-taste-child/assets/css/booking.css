@@ -1,0 +1,295 @@
+/**
+ * Booking System Styles
+ * Styles specifically for booking pages and components
+ */
+
+/* ==========================================================================
+   Booking Calendar
+   ========================================================================== */
+
+.wtp-booking-calendar {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.wtp-calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wtp-calendar-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.wtp-calendar-nav button {
+    background: var(--wtp-primary);
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.wtp-calendar-nav button:hover {
+    background: var(--wtp-secondary);
+}
+
+/* ==========================================================================
+   Booking Form
+   ========================================================================== */
+
+.wtp-booking-form {
+    background: var(--wtp-light);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.wtp-booking-form h3 {
+    margin-bottom: 30px;
+    color: var(--wtp-dark);
+}
+
+.wtp-form-group {
+    margin-bottom: 25px;
+}
+
+.wtp-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--wtp-dark);
+}
+
+.wtp-form-group input,
+.wtp-form-group select,
+.wtp-form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.wtp-form-group input:focus,
+.wtp-form-group select:focus,
+.wtp-form-group textarea:focus {
+    outline: none;
+    border-color: var(--wtp-primary);
+}
+
+.wtp-form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Service Selection
+   ========================================================================== */
+
+.wtp-service-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.wtp-service-option {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.wtp-service-option:hover {
+    border-color: var(--wtp-primary);
+}
+
+.wtp-service-option.selected {
+    border-color: var(--wtp-primary);
+    background: var(--wtp-primary);
+    color: #fff;
+}
+
+.wtp-service-option input[type="radio"] {
+    display: none;
+}
+
+/* ==========================================================================
+   Time Slots
+   ========================================================================== */
+
+.wtp-time-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.wtp-time-slot {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wtp-time-slot:hover:not(.disabled) {
+    border-color: var(--wtp-primary);
+    background: var(--wtp-light);
+}
+
+.wtp-time-slot.selected {
+    background: var(--wtp-primary);
+    color: #fff;
+    border-color: var(--wtp-primary);
+}
+
+.wtp-time-slot.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f5f5f5;
+}
+
+/* ==========================================================================
+   Booking Summary
+   ========================================================================== */
+
+.wtp-booking-summary {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.wtp-booking-summary h4 {
+    margin-bottom: 20px;
+    color: var(--wtp-dark);
+}
+
+.wtp-summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.wtp-summary-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+/* ==========================================================================
+   Booking Status Messages
+   ========================================================================== */
+
+.wtp-booking-message {
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.wtp-booking-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.wtp-booking-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.wtp-booking-message.info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* ==========================================================================
+   Booking Sidebar
+   ========================================================================== */
+
+.wtp-booking-sidebar {
+    position: sticky;
+    top: 30px;
+}
+
+.wtp-booking-info {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.wtp-booking-info h3 {
+    margin-bottom: 25px;
+    color: var(--wtp-dark);
+}
+
+.wtp-booking-info h4 {
+    color: var(--wtp-primary);
+    margin-bottom: 15px;
+    font-size: 1.125rem;
+}
+
+.wtp-booking-policies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wtp-booking-policies li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.wtp-booking-policies li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--wtp-primary);
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .wtp-booking-form {
+        padding: 25px 20px;
+    }
+    
+    .wtp-service-selection {
+        grid-template-columns: 1fr;
+    }
+    
+    .wtp-time-slots {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .wtp-booking-sidebar {
+        position: static;
+        margin-top: 30px;
+    }
+}

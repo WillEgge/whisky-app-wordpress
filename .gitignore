@@ -1,2 +1,62 @@
 #Prompts
 _prompts.md
+
+# WordPress Core
+/wp-admin/
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Configuration
+/wp-config.php
+/wp-config.php.bak
+
+# Content
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/backup-db/
+/wp-content/backups/
+/wp-content/blogs.dir/
+/wp-content/cache/
+/wp-content/w3tc-config/
+
+# Plugins (keep plugin directory but ignore contents)
+/wp-content/plugins/*
+!/wp-content/plugins/index.php
+
+# Themes (track only our child theme)
+/wp-content/themes/*
+!/wp-content/themes/whisky-taste-child/
+
+# Development
+node_modules/
+.env
+.env.*
+*.sql
+*.zip
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Backup files
+*.bak
+*~
+
+# Logs
+*.log
+error_log
+access_log
+
+# Temporary files
+*.tmp
+*.temp
